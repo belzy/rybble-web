@@ -1,0 +1,5 @@
+// This must be added in order to be used in docker. Docker is unable to install SWC, rust based ts/js compiler.
+
+{
+  "presets": ["next/babel"]
+}
