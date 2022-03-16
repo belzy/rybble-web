@@ -5,10 +5,11 @@ RUN apk update
 
 WORKDIR /usr/src/rybble
 
-COPY ./ ./
 COPY package*.json ./
 
 RUN npm install
+
+COPY ./ ./
 
 EXPOSE 3000
 
