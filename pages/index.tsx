@@ -1,10 +1,10 @@
 import React from 'react';
 
-const HomePage = () => {
+const Home = () => {
 
   return (
-    <>Hello World! From Docker</>
+    <h1>Welcome to Next.js</h1>
   );
 };
 
-export default HomePage;
+export default Home;

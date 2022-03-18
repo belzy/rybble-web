@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot should render correctly 1`] = `
+<div>
+  <h1>
+    Welcome to Next.js
+  </h1>
+</div>
+`;
