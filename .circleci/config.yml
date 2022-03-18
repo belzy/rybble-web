@@ -11,7 +11,8 @@ jobs:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
-      - image: cimg/node:17.7.1
+      # - image: cimg/node:17.7.1
+      - image: cypress/base:latest
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
@@ -22,6 +23,12 @@ jobs:
       - run:
           name: Build Application
           command: npm run build
+      - run:
+          name: Run Jest
+          command: npm run test
+      - run:
+          name: Run Cypress
+          command: npm run cy:run
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
