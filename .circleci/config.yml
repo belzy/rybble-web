@@ -5,14 +5,9 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
 
-executors:
-  cypress:
-    - image: cypress/base:latest
-
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-
   # Name of the job
   run-jest-tests:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
