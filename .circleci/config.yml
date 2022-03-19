@@ -47,9 +47,9 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
-            record: true 
-            parallel: true
-            parallelism: 4
-            group: 'cypress tests'
-            # start: 'npm start'
+          record: true 
+          parallel: true
+          parallelism: 4
+          group: 'cypress tests'
+          # start: 'npm start'
 
