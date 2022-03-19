@@ -2,17 +2,23 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
+orbs:
+  cypress: cypress-io/cypress@1
+
+executors:
+  cypress:
+    - image: cypress/base:latest
+
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
 
   # Name of the job
-  build-and-test:
+  run-jest-tests:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
-      # - image: cimg/node:17.7.1
-      - image: cypress/base:latest
+      - image: cimg/node:17.7.1
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
@@ -33,6 +39,17 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  build-and-test-workflow:
+  build:
     jobs:
-      - build-and-test
+      - run-jest-tests
+      - cypress/install:
+          build: 'npm run build'
+      - cypress/run:
+          requires:
+            - cypress/install
+            record: true 
+            parallel: true
+            parallelism: 4
+            group: 'cypress tests'
+            # start: 'npm start'
+
