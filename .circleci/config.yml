@@ -27,9 +27,9 @@ jobs:
       - run:
           name: Run Jest
           command: npm run test
-      - run:
-          name: Run Cypress
-          command: npm run cy:run
+      # - run:
+          # name: Run Cypress
+          # command: npm run cy:run
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
