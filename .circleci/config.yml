@@ -42,7 +42,7 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
-          record: true 
+          # record: true
           parallel: true
           parallelism: 4
           group: 'cypress tests'
