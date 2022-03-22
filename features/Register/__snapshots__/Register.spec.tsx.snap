@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`features/Register should render Register component unchanged 1`] = `
+<div>
+  <div
+    class="register"
+  >
+    <h1>
+      Sign In
+    </h1>
+  </div>
+</div>
+`;
