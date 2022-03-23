@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
 import AuthPage, { InnerContainer } from './AuthPage';
-import Carousel from './Carousel/Carousel';
 import '@testing-library/jest-dom';
 
 describe('components/AuthPage', () => {
