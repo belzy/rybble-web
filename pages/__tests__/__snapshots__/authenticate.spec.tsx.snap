@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/authenticate should render 1`] = `
+<div>
+  <div
+    class="css-qy22cp"
+  >
+    <div
+      class="css-j7qwjs"
+    />
+    <div
+      class="css-j7qwjs"
+    />
+  </div>
+</div>
+`;

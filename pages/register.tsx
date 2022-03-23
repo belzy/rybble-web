@@ -1,8 +1,11 @@
 import React from 'react';
+import Register from '../features/Register';
 
-const RegisterPage = () => {
+const RegisterPage = (): React.ReactElement => {
 
-  return ( <>Register Page</> );
+  return (
+    <Register></Register>
+  );
 };
 
 export default RegisterPage;
