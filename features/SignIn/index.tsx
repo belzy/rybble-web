@@ -1,7 +1,3 @@
-import React from 'react';
-
-const SignIn = () => {
-  return <></>
-};
+import SignIn from './SignIn';
 
 export default SignIn;

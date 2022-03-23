@@ -1,17 +1,3 @@
-import React from 'react';
-import './Register.module.scss';
+import Register from './Register';
 
-const x = 0;
-
-x;
-
-
-const Register = () => {
-
-  return ( 
-    <div className="register">
-      <h1>Sign In</h1>
-    </div> 
-  );
-};
 export default Register;

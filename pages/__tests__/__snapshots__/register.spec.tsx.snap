@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`features/Register should render 1`] = `
+exports[`pages/register should render 1`] = `
 <div>
   <div
     class="css-qy22cp"
