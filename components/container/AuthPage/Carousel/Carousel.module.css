@@ -1,0 +1,28 @@
+
+.carousel {
+  min-height: calc(145px + 1rem);
+}
+.carousel [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #7e57c2;
+  transition: all 0.3s ease-in-out;
+  margin: 0 8px 0 8px;
+}
+
+.carousel [data-bs-target][class='active'] {
+
+  height: 12px;
+  width: 12px;
+
+}
+
+.carousel [class='carousel-indicators'] {
+  align-items: center;
+  /* margin-top: 120px; */
+}
+
+.carousel a {
+  display: none;
+}
