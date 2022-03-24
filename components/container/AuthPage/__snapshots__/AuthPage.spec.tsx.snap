@@ -6,20 +6,89 @@ exports[`components/AuthPage should render 1`] = `
     class="css-qy22cp"
   >
     <div
-      class="css-1wb80v"
+      class="css-wj7vy8"
     >
+      <img
+        class="chakra-image css-6qqipc"
+        src="/assets/img/rybble-logo32x32.svg"
+      />
       <div
-        class="carousel slide"
+        class="carousel carousel slide"
       >
         <div
           class="carousel-indicators"
         >
-          Testing
+          <button
+            aria-current="true"
+            aria-label="Slide 1"
+            class="active"
+            data-bs-target=""
+            type="button"
+          />
+          <button
+            aria-current="false"
+            aria-label="Slide 2"
+            data-bs-target=""
+            type="button"
+          />
+          <button
+            aria-current="false"
+            aria-label="Slide 3"
+            data-bs-target=""
+            type="button"
+          />
         </div>
         <div
           class="carousel-inner"
         >
-          Testing
+          <div
+            class="active carousel-item"
+          >
+            <h3
+              class="chakra-text css-1tz2i1u"
+            >
+              Get More Done
+            </h3>
+            <p
+              class="chakra-text css-504jus"
+            >
+              Stay organised, get notified when work happens
+              <br />
+               and get results.
+            </p>
+          </div>
+          <div
+            class="carousel-item"
+          >
+            <h3
+              class="chakra-text css-1tz2i1u"
+            >
+              Stay Connected
+            </h3>
+            <p
+              class="chakra-text css-504jus"
+            >
+              Create tasks, lists and projects and assign
+              <br />
+               them to your colleagues.
+            </p>
+          </div>
+          <div
+            class="carousel-item"
+          >
+            <h3
+              class="chakra-text css-1tz2i1u"
+            >
+              Live Smarter
+            </h3>
+            <p
+              class="chakra-text css-504jus"
+            >
+              Each minute is a little thing, and yet,  to manage
+              <br />
+               the minute is the secret of success.
+            </p>
+          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -54,9 +123,35 @@ exports[`components/AuthPage should render 1`] = `
           </span>
         </a>
       </div>
+      <img
+        class="chakra-image css-ib9iq6"
+        src="/assets/img/auth-page-hero560x400.png"
+      />
+      <div
+        class="css-78bdv5"
+      >
+        <a
+          class="chakra-link css-x0sdsu"
+        >
+          <h2
+            class="chakra-heading css-z4ah3"
+          >
+            PRIVACY POLICY
+          </h2>
+        </a>
+        <a
+          class="chakra-link css-1t7utft"
+        >
+          <h2
+            class="chakra-heading css-z4ah3"
+          >
+            TERMS OF SERVICE
+          </h2>
+        </a>
+      </div>
     </div>
     <div
-      class="css-b95f0i"
+      class="css-1fjsovy"
     />
   </div>
 </div>
@@ -66,6 +161,10 @@ exports[`components/AuthPage/InnerContainer should render 1`] = `
 <div>
   <div
     class="css-a77fvk"
-  />
+  >
+    <h1>
+      Snapshot Test
+    </h1>
+  </div>
 </div>
 `;

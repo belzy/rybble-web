@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
 import AuthPage, { InnerContainer } from './AuthPage';
-import Carousel from './Carousel/Carousel';
 import '@testing-library/jest-dom';
 
 describe('components/AuthPage', () => {
@@ -10,6 +9,7 @@ describe('components/AuthPage', () => {
     const { container } = render(<AuthPage />);
 
     expect(container).toMatchSnapshot();
+
 
   });
 
@@ -28,16 +28,16 @@ describe('components/AuthPage/InnerContainer', () => {
 
   });
 
-  it('should render a heading as a child', () => {
+  // it('should render a heading as a child', () => {
 
-    render(
-      <InnerContainer>
-        <h1>Snapshot Test</h1>
-      </InnerContainer>);
+  //   render(
+  //     <InnerContainer>
+  //       <h1>Snapshot Test</h1>
+  //     </InnerContainer>);
 
     
 
-  });
+  // });
 
 });
 
