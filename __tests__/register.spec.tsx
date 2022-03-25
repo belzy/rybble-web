@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
-import RegisterPage from '../register';
+import RegisterPage from '../pages/register';
 import '@testing-library/jest-dom';
 
 describe('pages/register', () => {
 
-  it('should render', () => {
+  it('should render unchanged', () => {
 
     const { container } = render(<RegisterPage />);
 

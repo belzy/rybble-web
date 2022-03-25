@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuthPage } from '../../components';
+import { AuthPage, Link } from '../../components';
 
 const Register = () => {
 

@@ -1,127 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/AuthPage should render 1`] = `
+exports[`components/AuthPage should render unchanged 1`] = `
 <div>
   <div
     class="css-qy22cp"
   >
     <div
-      class="css-wj7vy8"
+      class="css-10u5hex"
     >
-      <img
-        class="chakra-image css-6qqipc"
-        src="/assets/img/rybble-logo32x32.svg"
-      />
       <div
-        class="carousel carousel slide"
+        class="css-12iz0lu"
       >
+        <img
+          class="chakra-image css-6qqipc"
+          src="/assets/img/rybble-logo32x32.svg"
+        />
         <div
-          class="carousel-indicators"
+          class="carousel carousel slide"
         >
-          <button
-            aria-current="true"
-            aria-label="Slide 1"
-            class="active"
-            data-bs-target=""
-            type="button"
-          />
-          <button
-            aria-current="false"
-            aria-label="Slide 2"
-            data-bs-target=""
-            type="button"
-          />
-          <button
-            aria-current="false"
-            aria-label="Slide 3"
-            data-bs-target=""
-            type="button"
-          />
+          <div
+            class="carousel-indicators"
+          >
+            <button
+              aria-current="true"
+              aria-label="Slide 1"
+              class="active"
+              data-bs-target=""
+              type="button"
+            />
+            <button
+              aria-current="false"
+              aria-label="Slide 2"
+              data-bs-target=""
+              type="button"
+            />
+            <button
+              aria-current="false"
+              aria-label="Slide 3"
+              data-bs-target=""
+              type="button"
+            />
+          </div>
+          <div
+            class="carousel-inner"
+          >
+            <div
+              class="active carousel-item"
+            >
+              <h3
+                class="chakra-text css-1tz2i1u"
+              >
+                Get More Done
+              </h3>
+              <p
+                class="chakra-text css-504jus"
+              >
+                Stay organised, get notified when work happens
+                <br />
+                and get results
+              </p>
+            </div>
+            <div
+              class="carousel-item"
+            >
+              <h3
+                class="chakra-text css-1tz2i1u"
+              >
+                Stay Connected
+              </h3>
+              <p
+                class="chakra-text css-504jus"
+              >
+                Stay organised, get notified when work happens
+                <br />
+                and get results
+              </p>
+            </div>
+            <div
+              class="carousel-item"
+            >
+              <h3
+                class="chakra-text css-1tz2i1u"
+              >
+                Live Smarter
+              </h3>
+              <p
+                class="chakra-text css-504jus"
+              >
+                Each minute is a little thing, and yet,  to manage
+                <br />
+                is the secret of success.
+              </p>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="true"
+              class="carousel-control-prev-icon"
+            />
+            <span
+              class="visually-hidden"
+            >
+              Previous
+            </span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="true"
+              class="carousel-control-next-icon"
+            />
+            <span
+              class="visually-hidden"
+            >
+              Next
+            </span>
+          </a>
         </div>
-        <div
-          class="carousel-inner"
-        >
-          <div
-            class="active carousel-item"
-          >
-            <h3
-              class="chakra-text css-1tz2i1u"
-            >
-              Get More Done
-            </h3>
-            <p
-              class="chakra-text css-504jus"
-            >
-              Stay organised, get notified when work happens
-              <br />
-               and get results.
-            </p>
-          </div>
-          <div
-            class="carousel-item"
-          >
-            <h3
-              class="chakra-text css-1tz2i1u"
-            >
-              Stay Connected
-            </h3>
-            <p
-              class="chakra-text css-504jus"
-            >
-              Create tasks, lists and projects and assign
-              <br />
-               them to your colleagues.
-            </p>
-          </div>
-          <div
-            class="carousel-item"
-          >
-            <h3
-              class="chakra-text css-1tz2i1u"
-            >
-              Live Smarter
-            </h3>
-            <p
-              class="chakra-text css-504jus"
-            >
-              Each minute is a little thing, and yet,  to manage
-              <br />
-               the minute is the secret of success.
-            </p>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#"
-          role="button"
-          tabindex="0"
-        >
-          <span
-            aria-hidden="true"
-            class="carousel-control-prev-icon"
-          />
-          <span
-            class="visually-hidden"
-          >
-            Previous
-          </span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#"
-          role="button"
-          tabindex="0"
-        >
-          <span
-            aria-hidden="true"
-            class="carousel-control-next-icon"
-          />
-          <span
-            class="visually-hidden"
-          >
-            Next
-          </span>
-        </a>
       </div>
       <img
         class="chakra-image css-ib9iq6"
@@ -131,19 +135,19 @@ exports[`components/AuthPage should render 1`] = `
         class="css-78bdv5"
       >
         <a
-          class="chakra-link css-x0sdsu"
+          class="chakra-link link css-x0sdsu"
         >
           <h2
-            class="chakra-heading css-z4ah3"
+            class="chakra-heading css-0"
           >
             PRIVACY POLICY
           </h2>
         </a>
         <a
-          class="chakra-link css-1t7utft"
+          class="chakra-link link css-n8m5js"
         >
           <h2
-            class="chakra-heading css-z4ah3"
+            class="chakra-heading css-0"
           >
             TERMS OF SERVICE
           </h2>
@@ -151,20 +155,16 @@ exports[`components/AuthPage should render 1`] = `
       </div>
     </div>
     <div
-      class="css-1fjsovy"
+      class="css-1mcnvz7"
     />
   </div>
 </div>
 `;
 
-exports[`components/AuthPage/InnerContainer should render 1`] = `
+exports[`components/AuthPage/InnerContainer should render unchanged 1`] = `
 <div>
   <div
-    class="css-a77fvk"
-  >
-    <h1>
-      Snapshot Test
-    </h1>
-  </div>
+    class="css-1pend5e"
+  />
 </div>
 `;

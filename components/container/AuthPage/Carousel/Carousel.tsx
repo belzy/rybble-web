@@ -4,35 +4,44 @@ import {
   Carousel as BSCarousel,
 } from 'react-bootstrap';
 import styles from './Carousel.module.css';
+import { TCarouselItem } from './Carousel.types';
 
 const Carousel = () => {
 
+  const carouselData: TCarouselItem[] = [{
+      title: 'Get More Done',
+      subTitle: ['Stay organised, get notified when work happens', 'and get results']
+    }, {
+      title: 'Stay Connected',
+      subTitle: ['Stay organised, get notified when work happens', 'and get results']
+    }, {
+      title: 'Live Smarter',
+      subTitle: ['Each minute is a little thing, and yet,  to manage', 'is the secret of success.']
+    }];
+
   return (
     <BSCarousel className={ styles.carousel }>
-      <BSCarousel.Item>
-        <Text fontSize='3xl' as='h3' mb='16px'>Get More Done</Text>
-        <Text fontSize='md'>
-          Stay organised, get notified when work happens<br /> and get results.
-        </Text>
 
-      </BSCarousel.Item>
+      { carouselData.map(( data: TCarouselItem, i: number ) => (
 
-      <BSCarousel.Item>
-        <Text  fontSize='3xl' as='h3' mb='16px'>Stay Connected</Text>
-        <Text fontSize='md'>
-          Create tasks, lists and projects and assign<br /> them to your colleagues.
-        </Text>
+        <BSCarousel.Item key={ i }>
 
-      </BSCarousel.Item>
+          <Text 
+            fontSize='3xl' 
+            as='h3' 
+            mb='16px'
+          >{ data.title }</Text>
 
-      <BSCarousel.Item>
-        <Text fontSize='3xl' as='h3' mb='16px'>Live Smarter</Text>
-        <Text fontSize='md'>
-          Each minute is a little thing, and yet,  to manage<br /> the minute 
-          is the secret of success.
-        </Text>
+          <Text fontSize='md'>
+            { data.subTitle[0] } 
+            <br /> 
+            { data.subTitle[1] }
+          </Text>
 
-      </BSCarousel.Item>
+        </BSCarousel.Item>
+
+      )) }
+
     </BSCarousel>
   );
 };
