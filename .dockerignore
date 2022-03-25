@@ -1,10 +1,13 @@
-node_modules/
+node_modules
 Dockerfile.dev
 Dockerfile.prod
 heroku.yml
-.circleci/
-cypress/
-__tests__
+.circleci
+.next
+.vscode
 .dockerignore
 .git
 .gitignore
+coverage
+LICENSE
+README.MD

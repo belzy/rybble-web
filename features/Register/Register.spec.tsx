@@ -4,12 +4,12 @@ import '@testing-library/jest-dom';
 
 describe('features/Register', () => {
 
-  it('should render', () => {
+  it('should render unchanged', () => {
 
     const { container } = render(<Register />);
 
     expect(container).toMatchSnapshot();
 
   });
-
+  
 });
