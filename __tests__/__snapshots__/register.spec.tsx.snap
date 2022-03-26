@@ -286,7 +286,7 @@ exports[`pages/register should render unchanged 1`] = `
               class="chakra-button css-18m91un"
               type="button"
             >
-              SIGN IN
+              SIGN UP
             </button>
             <p
               class="chakra-text css-1y481mq"

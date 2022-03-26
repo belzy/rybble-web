@@ -38,7 +38,7 @@ const NameInput = (): React.ReactElement => {
         variant='flushed'
         id='name'
         type='name'
-        placeholder='name'
+        placeholder='Name or nickname'
         focusBorderColor='brand.600'
       />
     </InputGroup>
@@ -155,7 +155,7 @@ const Form = (): React.ReactElement => {
           fontSize='sm' 
           isFullWidth={ true }
           size='lg'
-        >SIGN IN</Button>
+        >SIGN UP</Button>
 
         <Text fontWeight='500' color='GrayText'>OR</Text>
 

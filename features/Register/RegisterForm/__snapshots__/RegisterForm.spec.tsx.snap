@@ -126,7 +126,7 @@ exports[`features/Register/RegisterForm should match snapshot 1`] = `
           class="chakra-button css-18m91un"
           type="button"
         >
-          SIGN IN
+          SIGN UP
         </button>
         <p
           class="chakra-text css-1y481mq"
@@ -344,7 +344,7 @@ exports[`features/Register/RegisterForm should match snapshot 2`] = `
         class="chakra-button css-18m91un"
         type="button"
       >
-        SIGN IN
+        SIGN UP
       </button>
       <p
         class="chakra-text css-1y481mq"
