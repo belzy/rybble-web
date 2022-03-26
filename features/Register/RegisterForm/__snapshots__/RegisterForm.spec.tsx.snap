@@ -53,7 +53,7 @@ exports[`features/Register/RegisterForm should match snapshot 1`] = `
             <input
               class="chakra-input css-0"
               id="name"
-              placeholder="name"
+              placeholder="Name or nickname"
               type="name"
             />
           </div>
@@ -271,7 +271,7 @@ exports[`features/Register/RegisterForm should match snapshot 2`] = `
           <input
             class="chakra-input css-0"
             id="name"
-            placeholder="name"
+            placeholder="Name or nickname"
             type="name"
           />
         </div>
