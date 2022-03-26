@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/AuthPage should render unchanged 1`] = `
+exports[`components/AuthPage should match snapshot 1`] = `
 <div>
   <div
     class="css-qy22cp"
@@ -135,22 +135,16 @@ exports[`components/AuthPage should render unchanged 1`] = `
         class="css-78bdv5"
       >
         <a
-          class="chakra-link link css-x0sdsu"
+          class="chakra-link css-15g03e6"
+          href="/privacy-policy"
         >
-          <h2
-            class="chakra-heading css-0"
-          >
-            PRIVACY POLICY
-          </h2>
+          PRIVACY POLICY
         </a>
         <a
-          class="chakra-link link css-n8m5js"
+          class="chakra-link css-1dokpah"
+          href="/#"
         >
-          <h2
-            class="chakra-heading css-0"
-          >
-            TERMS OF SERVICE
-          </h2>
+          TERMS OF SERVICE
         </a>
       </div>
     </div>
@@ -161,7 +155,7 @@ exports[`components/AuthPage should render unchanged 1`] = `
 </div>
 `;
 
-exports[`components/AuthPage/InnerContainer should render unchanged 1`] = `
+exports[`components/AuthPage/InnerContainer should match snapshot 1`] = `
 <div>
   <div
     class="css-1pend5e"

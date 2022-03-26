@@ -1,10 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import Link from './Link';
 import '@testing-library/jest-dom';
+import { TEST_STRINGS } from '../../../constants/test.constants';
+
+const { SNAPSHOT_STRINGS } = TEST_STRINGS;
 
 describe('components/Link', () => {
 
-  it('should render', () => {
+  it(SNAPSHOT_STRINGS[0], () => {
 
     const { container } = render(<Link />);
 

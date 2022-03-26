@@ -1,10 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import AuthPage, { InnerContainer } from './AuthPage';
 import '@testing-library/jest-dom';
+import { TEST_STRINGS } from '../../../constants/test.constants';
+
+const { SNAPSHOT_STRINGS } = TEST_STRINGS;
 
 describe('components/AuthPage', () => {
 
-  it('should render unchanged', () => {
+  it(SNAPSHOT_STRINGS[0], () => {
 
     const { container } = render(<AuthPage />);
 
@@ -16,7 +19,7 @@ describe('components/AuthPage', () => {
 
 describe('components/AuthPage/InnerContainer', () => {
 
-  it('should render unchanged', () => {
+  it(SNAPSHOT_STRINGS[0], () => {
 
     const { container } = render(<InnerContainer />);
 
@@ -55,7 +58,7 @@ describe('components/AuthPage/InnerContainer', () => {
 
 describe('components/AuthPage/Carousel', () => {
 
-  it('should render unchanged', () => {
+  it(SNAPSHOT_STRINGS[0], () => {
 
     // const { container } = render(<Carousel />);
 

@@ -10,3 +10,7 @@ export type TInnerContainerRightProps = {
   children?: React.ReactNode
 };
 
+export type TAuthPageProps = {
+  children?: React.ReactNode
+};
+

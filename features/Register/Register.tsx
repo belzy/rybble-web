@@ -1,10 +1,34 @@
 import React from 'react';
-import { AuthPage, Link } from '../../components';
+import {
+  Text
+} from '@chakra-ui/react';
+import { AuthPage } from '../../components';
+import { Link } from '../../components';
+import { RegisterForm } from './RegisterForm';
 
-const Register = () => {
+const Register = (): React.ReactElement => {
 
   return (
-    <AuthPage></AuthPage>
+    <AuthPage>
+
+      <Text 
+        fontSize='sm' 
+        color='GrayText'
+        ml='auto'
+      >Already have an account?
+
+        <Link 
+          ml='16px' 
+          color='brand.600'
+          _hover={{ color: 'brand.500' }}
+          fontWeight='500'
+        >SIGN IN</Link>
+
+      </Text>
+
+      <RegisterForm />
+
+    </AuthPage>
   );
 };
 export default Register;
