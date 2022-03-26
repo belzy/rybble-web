@@ -12,7 +12,8 @@ import { Link } from '../../../components';
 import { 
   TInnerContainerProps,
   TInnerContainerRightProps,
- } from'./AuthPage.types';
+  TAuthPageProps,
+} from'./AuthPage.types';
 
 export const InnerContainer = ({ style = {}, bgColor = 'transparent', children }
   : TInnerContainerProps)
@@ -33,12 +34,25 @@ export const PrivacyTerms = (): React.ReactElement => {
 
   return (
     <Flex justifyContent='center' mt='auto'>
-      <Link mr='18px'>
-        <Heading size='xs'>PRIVACY POLICY</Heading>
+      <Link 
+        mr='18px' 
+        color='brand.600'
+        _hover={{ color: 'brand.500' }}
+        href='/privacy-policy'
+        fontSize='sm'
+        fontWeight='500'
+      >
+        PRIVACY POLICY
       </Link>
 
-      <Link ml='18px' textDecor='none'>
-        <Heading size='xs'>TERMS OF SERVICE</Heading>
+      <Link 
+        ml='18px' 
+        color='brand.600' 
+        _hover={{ color: 'brand.500' }}
+        fontSize='sm'
+        fontWeight='500'
+      >
+        TERMS OF SERVICE
       </Link>
     </Flex>);
 };
@@ -86,14 +100,16 @@ export const InnerContainerRight = ({ children }
  * @returns { React.ReactElement } React Element
  * @example <AuthPage><RegisterForm /></AuthPage>
  */
-const AuthPage = () => {
+const AuthPage = ({ children }
+  : TAuthPageProps)
+  : React.ReactElement<TAuthPageProps> => {
 
   return (
     <Flex h='100vh' w='100vw'>
 
       <Hide below='lg'><InnerContainerLeft /></Hide>
 
-      <InnerContainerRight></InnerContainerRight>
+      <InnerContainerRight>{ children }</InnerContainerRight>
 
     </Flex>
   );
