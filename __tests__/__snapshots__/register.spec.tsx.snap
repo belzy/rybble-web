@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/register should render unchanged 1`] = `
+exports[`pages/register should match snapshot 1`] = `
 <div>
   <div
     class="css-qy22cp"
@@ -157,7 +157,7 @@ exports[`pages/register should render unchanged 1`] = `
         Already have an account?
         <a
           class="chakra-link css-1oake0x"
-          href="/#"
+          href="/sign-in"
         >
           SIGN IN
         </a>
@@ -173,9 +173,9 @@ exports[`pages/register should render unchanged 1`] = `
         <p
           class="chakra-text css-xi606m"
         >
-          To keep connected with us please sign
+          Enter your personal details and start planning
           <br />
-           in with your personal info
+           your day
         </p>
         <form
           style="margin-top: 64px; width: 100%;"

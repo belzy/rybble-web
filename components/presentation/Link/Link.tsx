@@ -12,7 +12,7 @@ import { TLinkProps } from './Link.types';
  * It integrates well with other routing libraries like React Router, Reach Router and Next.js Link.
  * 
  * @returns { React.ReactElement } React Element
- * @example <Link as={ReactRouterLink} from="/home">Home</Link>
+ * @example <Link as={ReactRouterLink} href="/home">Home</Link>
  * @see — Docs https://chakra-ui.com/link 
  */
 const Link = ( props

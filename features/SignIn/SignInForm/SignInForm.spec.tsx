@@ -1,15 +1,15 @@
 import { render } from '@testing-library/react';
-import RegisterPage from '../pages/register';
+import SignInForm from './SignInForm';
 import '@testing-library/jest-dom';
-import { TEST_STRINGS } from '../constants/test.constants';
+import { TEST_STRINGS } from '../../../constants/test.constants';
 
 const { SNAPSHOT_STRINGS } = TEST_STRINGS;
 
-describe('pages/register', () => {
+describe('features/SignIn', () => {
 
   it(SNAPSHOT_STRINGS[0], () => {
 
-    const { container } = render(<RegisterPage />);
+    const { container } = render(<SignInForm />);
 
     expect(container).toMatchSnapshot();
 

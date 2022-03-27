@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 import Form from './Form';
 
-const RegisterForm = () => {
+const SignInForm = (): React.ReactElement => {
 
   return (
     <VStack 
@@ -21,10 +21,10 @@ const RegisterForm = () => {
         fontSize='3xl' 
         as='h2'
         mb='8px'
-      >Create Account</Text>
+      >Welcome Back</Text>
 
       <Text textAlign='center'>
-        Enter your personal details and start planning<br /> your day
+        To keep connected with us please sign in<br /> with your personal info
       </Text>
 
       <Form />
@@ -32,4 +32,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default SignInForm;

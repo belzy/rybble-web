@@ -23,6 +23,4 @@ describe('features/Register/RegisterForm', () => {
 
   });
 
-
-
 });

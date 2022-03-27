@@ -18,6 +18,7 @@ const Register = (): React.ReactElement => {
       >Already have an account?
 
         <Link 
+          href='/sign-in'
           ml='16px' 
           color='brand.600'
           _hover={{ color: 'brand.500' }}

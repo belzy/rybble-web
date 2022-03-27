@@ -22,34 +22,6 @@ import { Link } from '../../../components'
  * 
  * @returns { React.ReactElement } React Element
  */
-const NameInput = (): React.ReactElement => {
-
-  return (
-  <FormControl>
-
-    <InputGroup>
-
-      <InputLeftElement 
-        pointerEvents='none'
-        children={ <FaUserAlt color='#cbd5e0' fontSize='20px' /> }
-      />
-
-      <Input 
-        variant='flushed'
-        id='name'
-        type='name'
-        placeholder='Name or nickname'
-        focusBorderColor='brand.600'
-      />
-    </InputGroup>
-
-  </FormControl>);
-};
-
-/**
- * 
- * @returns { React.ReactElement } React Element
- */
 const EmailInput = (): React.ReactElement => {
 
   return (
@@ -98,6 +70,19 @@ const PasswordInput = (): React.ReactElement => {
     </FormControl>);
 };
 
+const ForgotPasswordLink = (): React.ReactElement => {
+
+  return (
+    <Link 
+      href='/forgot-password'
+      color='brand.600'
+      _hover={{ color: 'brand.500' }}
+      fontSize='sm'
+      fontWeight='500'
+    >FORGOT PASSWORD</Link>
+  );
+};
+
 const SocialButtons = (): React.ReactElement => {
 
   return (
@@ -130,10 +115,9 @@ const Form = (): React.ReactElement => {
     <form style={{ marginTop: '64px', width: '100%' }}>
 
       <VStack spacing={ 8 }>
-        <NameInput />
         <EmailInput />
         <PasswordInput />
-        {/* <ForgotPasswordLink /> */}
+        <ForgotPasswordLink />
 
         <Button 
           bgColor='brand.600' 
