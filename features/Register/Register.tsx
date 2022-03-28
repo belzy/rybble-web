@@ -11,15 +11,15 @@ const Register = (): React.ReactElement => {
   return (
     <AuthPage>
 
-      <Text 
-        fontSize='sm' 
+      <Text
+        fontSize='sm'
         color='GrayText'
         ml='auto'
       >Already have an account?
 
-        <Link 
+        <Link
           href='/sign-in'
-          ml='16px' 
+          ml='16px'
           color='brand.600'
           _hover={{ color: 'brand.500' }}
           fontWeight='500'
@@ -32,4 +32,5 @@ const Register = (): React.ReactElement => {
     </AuthPage>
   );
 };
+
 export default Register;
