@@ -3,8 +3,13 @@ import {
   Heading,
   VStack,
   Text,
+  Button,
 } from '@chakra-ui/react';
 import Form from './Form';
+import AuthForm from '../../../components/container/AuthForm';
+import NameInput from '../../../components/presentation/Inputs/NameInput';
+import EmailInput from '../../../components/presentation/Inputs/EmailInput';
+import PasswordInput from '../../../components/presentation/Inputs/PasswordInput';
 
 const RegisterForm = () => {
 
@@ -27,7 +32,25 @@ const RegisterForm = () => {
         Enter your personal details and start planning<br /> your day
       </Text>
 
-      <Form />
+      <AuthForm>
+        <NameInput />
+        <EmailInput />
+        <PasswordInput />
+
+        <Button 
+          bgColor='brand.600' 
+          color='white' 
+          _hover={{ backgroundColor: 'brand.500'}}
+          fontSize='sm' 
+          isFullWidth={ true }
+          size='lg'
+        >SIGN UP</Button>
+
+        <Text fontWeight='500' color='GrayText'>OR</Text>
+
+      </AuthForm>
+
+      {/* <Form /> */}
     </VStack>
   );
 };

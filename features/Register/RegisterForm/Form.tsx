@@ -36,8 +36,9 @@ const NameInput = (): React.ReactElement => {
 
       <Input 
         variant='flushed'
-        id='name'
-        type='name'
+        id='register-name'
+        type='text'
+        name='register-name'
         placeholder='Name or nickname'
         focusBorderColor='brand.600'
       />
@@ -64,8 +65,9 @@ const EmailInput = (): React.ReactElement => {
 
       <Input 
         variant='flushed'
-        id='email' 
+        id='register-email' 
         type='email' 
+        name='register-email'
         placeholder='Email' 
         focusBorderColor='brand.600'
       />
@@ -88,8 +90,9 @@ const PasswordInput = (): React.ReactElement => {
 
       <Input 
         variant='flushed'
-        id='password' 
+        id='register-password' 
         type='password' 
+        name='register-password'
         placeholder='Password' 
         focusBorderColor='brand.600'
       />
@@ -133,7 +136,6 @@ const Form = (): React.ReactElement => {
         <NameInput />
         <EmailInput />
         <PasswordInput />
-        {/* <ForgotPasswordLink /> */}
 
         <Button 
           bgColor='brand.600' 

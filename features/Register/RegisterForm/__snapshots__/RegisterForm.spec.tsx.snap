@@ -52,9 +52,10 @@ exports[`features/Register/RegisterForm should match snapshot 1`] = `
             </div>
             <input
               class="chakra-input css-0"
-              id="name"
+              id="register-name"
+              name="register-name"
               placeholder="Name or nickname"
-              type="name"
+              type="text"
             />
           </div>
         </div>
@@ -87,7 +88,8 @@ exports[`features/Register/RegisterForm should match snapshot 1`] = `
             </div>
             <input
               class="chakra-input css-0"
-              id="email"
+              id="register-email"
+              name="register-email"
               placeholder="Email"
               type="email"
             />
@@ -116,7 +118,8 @@ exports[`features/Register/RegisterForm should match snapshot 1`] = `
             </div>
             <input
               class="chakra-input css-0"
-              id="password"
+              id="register-password"
+              name="register-password"
               placeholder="Password"
               type="password"
             />
@@ -270,9 +273,10 @@ exports[`features/Register/RegisterForm should match snapshot 2`] = `
           </div>
           <input
             class="chakra-input css-0"
-            id="name"
+            id="register-name"
+            name="register-name"
             placeholder="Name or nickname"
-            type="name"
+            type="text"
           />
         </div>
       </div>
@@ -305,7 +309,8 @@ exports[`features/Register/RegisterForm should match snapshot 2`] = `
           </div>
           <input
             class="chakra-input css-0"
-            id="email"
+            id="register-email"
+            name="register-email"
             placeholder="Email"
             type="email"
           />
@@ -334,7 +339,8 @@ exports[`features/Register/RegisterForm should match snapshot 2`] = `
           </div>
           <input
             class="chakra-input css-0"
-            id="password"
+            id="register-password"
+            name="register-password"
             placeholder="Password"
             type="password"
           />

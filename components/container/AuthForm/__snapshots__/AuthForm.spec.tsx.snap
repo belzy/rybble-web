@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/AuthForm should match snapshot 1`] = `
+<div>
+  <form
+    data-testid="auth-form"
+    style="margin-top: 64px; width: 100%;"
+  >
+    <div
+      class="chakra-stack css-14witgw"
+    >
+      <p>
+        Test
+      </p>
+    </div>
+  </form>
+</div>
+`;
