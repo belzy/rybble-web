@@ -41,6 +41,7 @@ const SocialButton = ({ icon }: TSocialButtonProps): React.ReactElement<TSocialB
   let label: string = '';
 
   switch (icon) {
+
     case 'facebook':
       Icon = <FaFacebookF color='#3B5998' />;
       label = 'Sign up with Facebook';
