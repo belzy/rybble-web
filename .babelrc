@@ -2,4 +2,8 @@
 
 {
   "presets": ["next/babel"]
+
+  // Used for getting debugger to work properly. Remove if issues.
+  // "sourceMap": "inline",
+  // "retainLines": true
 }
