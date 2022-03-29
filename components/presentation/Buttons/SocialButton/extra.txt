@@ -1,0 +1,17 @@
+//   it('should render a facebook icon when icon prop is set to \'facebook\'', () => {
+
+//     render(<SocialButton icon='facebook'></SocialButton>);
+
+//     const iconEl: HTMLElement = screen.getByTestId('social-button-facebook-icon');
+
+//     expect(typeof iconEl).toBe(HTMLElement);
+
+//   });
+
+//   it(SNAPSHOT_STRINGS[0], (): void => {
+
+//     const { container }: RenderResult = render(<SocialButton />);
+
+//     // expect(container).toMatchSnapshot();
+
+//   });

@@ -4,68 +4,45 @@ import {
 } from '@chakra-ui/react';
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
+import { TSocialButtonProps } from './SocialButton.types';
 
-const SocialButtons = (): React.ReactElement => {
-
-  return (
-    <ButtonGroup spacing={ 4 }>
-
-      <IconButton 
-        size='lg'
-        aria-label='Sign up with Facebook'
-        icon={ <FaFacebookF color='#3B5998' /> }
-      />
-
-      <IconButton 
-        size='lg'
-        aria-label='Sign up with Google' 
-        icon={ <FcGoogle /> }
-      />
-
-      <IconButton 
-        size='lg'
-        aria-label='Sign up with Twitter' 
-        icon={ <FaTwitter color='#55ACEE' /> }
-      />
-
-    </ButtonGroup>);
-}
-
-export type TSocialButtonProps = {
-  icon: 'twitter' | 'facebook' | 'google'
-};
-
+/**
+ * * A button for allowing users to sign in/register with their social profiles
+ * @param { TSocialButtonProps } icon 
+ * @returns { React.ReactElement } React Element
+ */
 const SocialButton = ({ icon }: TSocialButtonProps): React.ReactElement<TSocialButtonProps> => {
 
-  let Icon: any = <></>;
-  let label: string = '';
+  let Icon: any = '';
+  let label: string = 'Sign up with ';
+  let testId: string = 'social-button-facebook-icon-';
 
-  switch (icon) {
+  if (icon === 'facebook') {
+    Icon = <FaFacebookF color='#3B5998' />;
+    label += 'Facebook';
+    testId += 'facebook';
+  }
 
-    case 'facebook':
-      Icon = <FaFacebookF color='#3B5998' />;
-      label = 'Sign up with Facebook';
-      break;
+  else if (icon === 'twitter') {
+    Icon = <FaTwitter color='#55ACEE' />;
+    label += 'Twitter';
+  }
 
-    case 'twitter':
-      Icon = <FaTwitter color='#55ACEE' />;
-      label = 'Sign up with Twitter';
-      break;
+  else if (icon === 'google') {
+    Icon = <FcGoogle />;
+    label += 'Google';
+  }
 
-    case 'google':
-      Icon = <FcGoogle />;
-      label = 'Sign up with Google';
-    default:
-
-  };
-
+  // <IconButton 
+  //   size='lg'
+  //   aria-label={ label }
+  //   icon={ <Icon data-testid={ testId } /> }
+  // />
   return (
 
-      <IconButton 
-        size='lg'
-        aria-label={ label }
-        icon={ <Icon />  }
-      />
+    <>Hello</>
     
   );
 };
+
+export default SocialButton;
