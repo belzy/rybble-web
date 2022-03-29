@@ -30,14 +30,42 @@ const SocialButtons = (): React.ReactElement => {
 
     </ButtonGroup>);
 }
-k
+
 export type TSocialButtonProps = {
   icon: 'twitter' | 'facebook' | 'google'
 };
 
 const SocialButton = ({ icon }: TSocialButtonProps): React.ReactElement<TSocialButtonProps> => {
 
+  let Icon: any = <></>;
+  let label: string = '';
+
+  switch (icon) {
+
+    case 'facebook':
+      Icon = <FaFacebookF color='#3B5998' />;
+      label = 'Sign up with Facebook';
+      break;
+
+    case 'twitter':
+      Icon = <FaTwitter color='#55ACEE' />;
+      label = 'Sign up with Twitter';
+      break;
+
+    case 'google':
+      Icon = <FcGoogle />;
+      label = 'Sign up with Google';
+    default:
+
+  };
 
   return (
+
+      <IconButton 
+        size='lg'
+        aria-label={ label }
+        icon={ <Icon />  }
+      />
+    
   );
 };
