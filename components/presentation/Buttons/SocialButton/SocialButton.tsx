@@ -7,42 +7,43 @@ import { FcGoogle } from 'react-icons/fc';
 import { TSocialButtonProps } from './SocialButton.types';
 
 /**
- * * A button for allowing users to sign in/register with their social profiles
- * @param { TSocialButtonProps } icon 
+ * Used to create a button for users to sign in or register with their 
+ * social profiles.
+ * 
+ * @param { TSocialButtonProps } props
+ * @param { 'facebook' | 'twitter' | 'google' } props.icon
  * @returns { React.ReactElement } React Element
  */
 const SocialButton = ({ icon }: TSocialButtonProps): React.ReactElement<TSocialButtonProps> => {
 
-  let Icon: any = '';
+  let Icon: any = <FcGoogle />;
   let label: string = 'Sign up with ';
-  let testId: string = 'social-button-facebook-icon-';
+  let testId: string = 'social-button-icon-';
 
   if (icon === 'facebook') {
-    Icon = <FaFacebookF color='#3B5998' />;
-    label += 'Facebook';
+    label += 'facebook';
     testId += 'facebook';
+    Icon = <FaFacebookF color='#3B5998' data-testid={ testId } />;
   }
 
   else if (icon === 'twitter') {
-    Icon = <FaTwitter color='#55ACEE' />;
-    label += 'Twitter';
+    label += 'twitter';
+    testId +='twitter';
+    Icon = <FaTwitter data-testid={ testId } color='#55ACEE' />;
   }
 
   else if (icon === 'google') {
-    Icon = <FcGoogle />;
-    label += 'Google';
+    label += 'google';
+    testId += 'google';
+    Icon = <FcGoogle data-testid={ testId } />;
   }
 
-  // <IconButton 
-  //   size='lg'
-  //   aria-label={ label }
-  //   icon={ <Icon data-testid={ testId } /> }
-  // />
   return (
-
-    <>Hello</>
-    
-  );
+    <IconButton 
+      size='lg'
+      aria-label={ label }
+      icon={ Icon }
+    /> );
 };
 
 export default SocialButton;
