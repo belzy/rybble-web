@@ -74,7 +74,7 @@ const ForgotPasswordForm = (): React.ReactElement => {
             fontSize='sm'
             isFullWidth={true}
             size='lg'
-          >FORGOT PASSWORD</Button>
+          >RECOVER PASSWORD</Button>
 
         </VStack>
 
