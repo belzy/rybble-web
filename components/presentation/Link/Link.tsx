@@ -20,7 +20,6 @@ const Link = ( props
   : React.ReactElement<TLinkProps> => {
 
   const { href } = props;
-  // delete props?.href;
 
   return (
     <NextLink href={ href || '#'} passHref>
