@@ -5,13 +5,41 @@ import {
   Text,
   Button,
 } from '@chakra-ui/react';
-import Form from './Form';
-import AuthForm from '../../../components/container/AuthForm';
-import NameInput from '../../../components/presentation/Inputs/NameInput';
-import EmailInput from '../../../components/presentation/Inputs/EmailInput';
-import PasswordInput from '../../../components/presentation/Inputs/PasswordInput';
+import {
+  AuthForm,
+  NameInput,
+  EmailInput,
+  PasswordInput,
+  SocialButtonGroup,
+} from '../../../components';
 
-const RegisterForm = () => {
+const Form = (): React.ReactElement => {
+
+  return (
+    <AuthForm>
+      <NameInput />
+      <EmailInput />
+      <PasswordInput />
+
+      <Button 
+        bgColor='brand.600' 
+        color='white' 
+        _hover={{ backgroundColor: 'brand.500'}}
+        fontSize='sm' 
+        isFullWidth={ true }
+        size='lg'
+      >SIGN UP</Button>
+
+      <Text fontWeight='500' color='GrayText'>OR</Text>
+
+      <SocialButtonGroup
+        buttonIcons={ ['facebook', 'google', 'twitter'] }
+      />
+
+    </AuthForm>);
+};
+
+const RegisterForm = (): React.ReactElement => {
 
   return (
     <VStack 
@@ -32,25 +60,7 @@ const RegisterForm = () => {
         Enter your personal details and start planning<br /> your day
       </Text>
 
-      <AuthForm>
-        <NameInput />
-        <EmailInput />
-        <PasswordInput />
-
-        <Button 
-          bgColor='brand.600' 
-          color='white' 
-          _hover={{ backgroundColor: 'brand.500'}}
-          fontSize='sm' 
-          isFullWidth={ true }
-          size='lg'
-        >SIGN UP</Button>
-
-        <Text fontWeight='500' color='GrayText'>OR</Text>
-
-      </AuthForm>
-
-      {/* <Form /> */}
+      <Form />
     </VStack>
   );
 };

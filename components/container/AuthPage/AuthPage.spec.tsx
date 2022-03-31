@@ -23,7 +23,7 @@ describe('components/AuthPage/InnerContainer', () => {
 
     const { container } = render(<InnerContainer />);
 
-      expect(container).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
 
   });
 

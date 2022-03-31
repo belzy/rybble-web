@@ -178,6 +178,7 @@ exports[`features/SignIn should match snapshot 1`] = `
            with your personal info
         </p>
         <form
+          data-testid="auth-form"
           style="margin-top: 64px; width: 100%;"
         >
           <div
@@ -212,7 +213,8 @@ exports[`features/SignIn should match snapshot 1`] = `
                 </div>
                 <input
                   class="chakra-input css-0"
-                  id="email"
+                  id="register-email"
+                  name="register-email"
                   placeholder="Email"
                   type="email"
                 />
@@ -241,7 +243,8 @@ exports[`features/SignIn should match snapshot 1`] = `
                 </div>
                 <input
                   class="chakra-input css-0"
-                  id="password"
+                  id="register-password"
+                  name="register-password"
                   placeholder="Password"
                   type="password"
                 />
@@ -253,12 +256,6 @@ exports[`features/SignIn should match snapshot 1`] = `
             >
               FORGOT PASSWORD
             </a>
-            <button
-              class="chakra-button css-18m91un"
-              type="button"
-            >
-              SIGN UP
-            </button>
             <p
               class="chakra-text css-1y481mq"
             >
@@ -269,13 +266,14 @@ exports[`features/SignIn should match snapshot 1`] = `
               role="group"
             >
               <button
-                aria-label="Sign up with Facebook"
+                aria-label="Sign up with facebook"
                 class="chakra-button css-14axtgj"
                 type="button"
               >
                 <svg
                   aria-hidden="true"
                   color="#3B5998"
+                  data-testid="social-button-icon-facebook"
                   fill="currentColor"
                   focusable="false"
                   height="1em"
@@ -292,12 +290,13 @@ exports[`features/SignIn should match snapshot 1`] = `
                 </svg>
               </button>
               <button
-                aria-label="Sign up with Google"
+                aria-label="Sign up with google"
                 class="chakra-button css-14axtgj"
                 type="button"
               >
                 <svg
                   aria-hidden="true"
+                  data-testid="social-button-icon-google"
                   enable-background="new 0 0 48 48"
                   fill="currentColor"
                   focusable="false"
@@ -335,13 +334,14 @@ exports[`features/SignIn should match snapshot 1`] = `
                 </svg>
               </button>
               <button
-                aria-label="Sign up with Twitter"
+                aria-label="Sign up with twitter"
                 class="chakra-button css-14axtgj"
                 type="button"
               >
                 <svg
                   aria-hidden="true"
                   color="#55ACEE"
+                  data-testid="social-button-icon-twitter"
                   fill="currentColor"
                   focusable="false"
                   height="1em"

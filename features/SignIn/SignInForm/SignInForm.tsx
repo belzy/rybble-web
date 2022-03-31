@@ -4,7 +4,47 @@ import {
   VStack,
   Text,
 } from '@chakra-ui/react';
-import Form from './Form';
+import {
+  AuthForm,
+  NameInput,
+  EmailInput,
+  PasswordInput,
+  SocialButtonGroup,
+  Link,
+} from '../../../components';
+
+const ForgotPasswordLink = (): React.ReactElement => {
+
+  return (
+    <Link 
+      href='/forgot-password'
+      color='brand.600'
+      _hover={{ color: 'brand.500' }}
+      fontSize='sm'
+      fontWeight='500'
+    >FORGOT PASSWORD</Link>
+  );
+};
+
+const Form = (): React.ReactElement => {
+
+  return (
+    <AuthForm>
+
+      <EmailInput />
+      <PasswordInput />
+
+      <ForgotPasswordLink />
+
+      <Text fontWeight='500' color='GrayText'>OR</Text>
+
+      <SocialButtonGroup 
+        buttonIcons={ ['facebook', 'google', 'twitter'] }
+      />
+
+    </AuthForm>
+  );
+};
 
 const SignInForm = (): React.ReactElement => {
 
