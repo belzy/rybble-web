@@ -24,7 +24,7 @@ const Form = (): React.ReactElement => {
       <Button 
         bgColor='brand.600' 
         color='white' 
-        _hover={{ backgroundColor: 'brand.500'}}
+        _hover={{ backgroundColor: 'brand.500' }}
         fontSize='sm' 
         isFullWidth={ true }
         size='lg'
